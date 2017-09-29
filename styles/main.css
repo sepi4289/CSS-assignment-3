@@ -5,7 +5,7 @@
 body {
   background: #b3dbe8;
   color: #000;
-  font-family: sans-serif; /*   add fonts   */
+  font-family: "Puritan", Arial, sans-serif; /*   add fonts   */
 }
 
 
@@ -17,7 +17,7 @@ body {
     */
 
 #container {
-  max-width: 1280px;
+  max-width:1280px;
   margin: 2% auto;
 }
 
@@ -47,7 +47,7 @@ aside {
 
 h1, h2 {
   margin: 0;
-  font-family: serif; /*   add fonts   */
+  font-family:"Cormorant Garamond", Georgia, serif; /*   add fonts   */
 }
 
 article h1 {
@@ -86,7 +86,6 @@ img {
   max-width: 100%;
 }
 
-
 /* links */
 
 a {
@@ -115,3 +114,19 @@ aside a:hover {
 
 
 /* put your media queries below */
+
+@media (max-width: 600px) {
+  article {
+    width:100%;
+    margin: 0;     }
+  aside {
+          width: 100%;
+          margin: 0;      }
+
+
+#container { margin:0;} /* margin 0 use to get rid off blue line */
+
+#top-image-container { display: none;}
+#sidebar2 {margin: 0;}
+
+}
